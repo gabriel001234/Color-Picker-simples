@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Color Picker simples</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Color Picker simples</h1>
+      <div id="container-conteudo">
+        <div id="container-textos">
+          <p><label for="inputVermelho">(R) Vermelho: </label></p>
+          <p><label for="inputVerde">(G) Verde: </label></p>
+          <p><label for="inputAzul">(B) Azul: </label></p>
+        </div>
+        <div id="container-barras">
+          <p>
+            <input
+              type="range"
+              id="inputVermelho"
+              nome="inputVermelho"
+              min="0"
+              max="255"
+              value="0"
+            />
+          </p>
+          <p>
+            <input
+              type="range"
+              id="inputVerde"
+              nome="inputVerde"
+              min="0"
+              max="255"
+              value="0"
+            />
+          </p>
+          <p>
+            <input
+              type="range"
+              id="inputAzul"
+              nome="inputAzul"
+              min="0"
+              max="255"
+              value="0"
+            />
+          </p>
+        </div>
+        <div id="container-caixas">
+          <p>
+            <input type="text" id="caixaVermelha" value="0" readonly disabled />
+          </p>
+          <p>
+            <input type="text" id="caixaVerde" value="0" readonly disabled />
+          </p>
+          <p>
+            <input type="text" id="caixaAzul" value="0" readonly disabled />
+          </p>
+        </div>
+      </div>
+      <div id="cor"></div>
+    </div>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
